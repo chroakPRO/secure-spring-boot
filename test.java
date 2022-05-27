@@ -95,5 +95,50 @@ public class UserInfo {
 
 }
 
+// Connect to the database
+// Create a new user
 
-publc
+class User {
+    private final String name;
+    private final String username;
+    private final String password;
+
+    public User(String name, String username, String password) {
+        this.name = name;
+        this.username = username;
+        this.password = password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+}
+
+class UserService {
+    private final UserRepository userRepository;
+
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    public void addUser(User user) {
+        userRepository.save(user);
+    }
+}
+
+class UserRepository {
+    public void save(User user) {
+        // Save user to database mysql driver
+        
+
+    }
+}
+

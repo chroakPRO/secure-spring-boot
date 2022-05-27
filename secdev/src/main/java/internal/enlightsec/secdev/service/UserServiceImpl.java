@@ -17,8 +17,8 @@ import java.util.List;
 @Transactional
 @Slf4j
 public class UserServiceImpl implements UserService {
-    private final UserRepo userRepo;
-    private final RoleRepo roleRepo;
+    private  UserRepo userRepo;
+    private  RoleRepo roleRepo;
     
     @Override
     public User saveUser(User user) {

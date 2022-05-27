@@ -12,7 +12,7 @@ import antlr.collections.List;
 @RequestMapping("/api")
 @RestController @RequiredArgsConstructor
 public class UserResource {
-    private final UserService userService;
+    private UserService userService;
 
     @GetMapping("/users")
     public String getUsers() {
