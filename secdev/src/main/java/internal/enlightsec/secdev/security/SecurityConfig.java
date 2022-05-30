@@ -29,6 +29,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
                 // customize logout handler to log out of Auth0
                 .addLogoutHandler(logoutHandler);
+                String[][] x = {{"O", "X", "X"},{"O", "X", "O"},{"X", "O", "X"}};
     }
 
 // If using HS256, create a Bean to specify the HS256 should be used. By default, RS256 will be used.
