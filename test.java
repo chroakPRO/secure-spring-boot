@@ -1,11 +1,11 @@
 public final class NativeMethodWrapper {
 
     // private native method
-    private native void nativeOperation(byte[] data, int offset,
+    private native void nativeOperation(byte[ ] data, int offset,
                                         int len);
 
     // wrapper method performs checks
-    public void doOperation(byte[] data, int offset, int len) {
+    public void doOperation(byte[ ] data, int offset, int len) {
         // copy mutable input
         data = data.clone();
 
