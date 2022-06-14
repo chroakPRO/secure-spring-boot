@@ -5,9 +5,9 @@ import internal.enlightsec.secdev.domain.Role;
 import internal.enlightsec.secdev.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.*;
 
-import antlr.collections.List;
 
 @RequestMapping("/api")
 @RestController @RequiredArgsConstructor
@@ -16,11 +16,12 @@ public class UserResource {
 
     @GetMapping("/users")
     public String getUsers() {
-        return "test";
+        return HttpHeaders.ACCEPT;
     }
 
     @PostMapping("/user/save")
     public ResponseEntity<User> saveUser(User user) {
+
         return ResponseEntity.ok(userService.saveUser(user));
     }
 

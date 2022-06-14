@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SecdevApplication<secdev>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "internal.enlightsec.secdev.SecdevApplication",
+            "projectName": "secdev",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
