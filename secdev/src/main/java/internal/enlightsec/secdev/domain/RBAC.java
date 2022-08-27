@@ -1,19 +1,6 @@
 /*
-    class: RBAC
-    
-    param user: User object
-
-    param permissionContainer: Every container has a maximum of 1 permission. The idea is to create a collection of permission and append that to a RBAC Object.
-
-    param
-
-
-
-
-
- 
-*/
-
+ * 
+ */
 package internal.enlightsec.secdev.domain;
 
 
