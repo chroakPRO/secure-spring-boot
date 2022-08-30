@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 
 // Den här pratar med 
-public interface RoleRepo extends JpaRepository<Role, Long> {
+public interface RBACRepo {
     Role findByName(String name);
 }

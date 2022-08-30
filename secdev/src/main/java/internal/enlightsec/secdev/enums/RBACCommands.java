@@ -1,4 +1,4 @@
-packge internal.enlightsec.secdev.enums;
+package internal.enlightsec.secdev.enums;
 
 
 public enum RBACCommands {

@@ -3,13 +3,14 @@ import internal.enlightsec.*;
 import internal.enlightsec.secdev.domain.User;
 import internal.enlightsec.secdev.enums.RBACCommandResults;
 import internal.enlightsec.secdev.enums.RBACPermissionSet;
+import internal.enlightsec.secdev.repo.RBACRepo;
 
 import java.util.ArrayList;
 import java.util.Collection;
 // this is the service class that implements the RBACService interface.
 // and sends it repo
-private class RBACServiceImpl implements RBACService {
-    private RBACRepository repo;
+public class RBACServiceImpl implements RBACService {
+    private RBACRepo repo;
     private UserService userService;
     
     @Override

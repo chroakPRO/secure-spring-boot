@@ -7,7 +7,7 @@ import internal.enlightsec.secdev.enums.RBACPermissionSet;
 import java.util.ArrayList;
 import java.util.Collection;
 
-private interface RBACService {
+public interface RBACService {
 
     RBACCommandResults HasPermission(int permissionId);
     RBACCommandResults GrantPermission(int permissionId, boolean granted, User user);
